@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weathercss.css">
+    <title>Weather Forecast</title>
+</head>
+<body id="rdm">
+    <div class="weather">
+        <div class="header">
+            <img src="weather/cloud.svg" alt="" class="logo"><h3 class="logo-txt">Weather</h3>
+            <h3 class="location">Current Location</h3>
+            <input type="search" value="" list="suggestions" class="search srch" placeholder="Your City">
+            <datalist id="suggestions">
+            </datalist>
+        </div>
+        <div class="main-content">
+            <div class="weather-box">
+                <div class="weather-today">
+                    <h4 class="city">City</h4>
+                    <p class="time">Time</p>
+                    <h2 class="temp"><span class="temp1">+25</span>&deg;C</h2>
+                </div>
+                <div class="weather-today-img"><img src="weather/sunny.png" alt="sun" class="weather-imgg"></div> 
+            </div>
+            
+            <div class="details-box">
+                <h3 class="detail">Details</h3>
+                <div class="details">
+                    <div class="details1 weather-condition"><h3 class="cloudy">Cloudy</h3><span class="value">50</span>%</div>
+                    <div class="details1 wind"><h3 class="windy">Wind</h3><span class="value">E,1</span>m/s</div>
+                    <div class="details1 humidity"><h3 class="humid">Humidity</h3><span class="value">0</span>%</div>
+                    <div class="details1 uvi"><h3 class="uv">Pressure</h3><span class="value">0</span>hpa</div>
+                </div>
+            </div>
+            
+            <div class="forecast-box">    
+                <h3 class="next-forecast0">Next Forecast</h3>
+                <div class="next-forecast">
+                    <article class="next-forecast1 next">
+                        <h3 class="forecast-day "><span class="forecast-day1">Mon 21</span></h3>
+                        <h4 class="forecast-temp next-forecastz"><span class="temp1">+25</span>&deg;C</h4>
+                        <p class="forecast-humidity hum"><span class="humidity1">24</span>%</p>
+                        <img src="weather/sun.png" alt="sun" class="forecast-icon icon">
+                        <p class="forecast-cloudy CC next-forecastz"><span class="cloudy1">0</span>%</p>
+                    </article>
+                    <article class="next-forecast1 next">
+                        <h3 class="forecast-day1"><span class="forecast-day1">Teu 22</span></h3>
+                        <p class="forecast-temp1 next-forecastz"><span class="temp1">+25</span>&deg;C</p>
+                        <p class="forecast-humidity1 hum"><span class="humidity1">24</span>%</p>
+                        <img src="weather/sun.png" alt="sun" class="forecast-icon1 icon">
+                        <p class="forecast-cloudy1 CC next-forecastz"><span class="cloudy1">0</span>%</p>
+                    </article>
+                    <article class="next-forecast1 next">
+                        <h3 class="forecast-day2 "><span class="forecast-day1">Wed 23</span></h3>
+                        <p class="forecast-temp2 next-forecastz"><span class="temp1">+25</span>&deg;C</p>
+                        <p class="forecast-humidity2 hum"><span class="humidity1">24</span>%</p>
+                        <img src="weather/sun.png" alt="sun" class="forecast-icon2 icon">
+                        <p class="forecast-cloudy2 CC next-forecastz"><span class="cloudy1">0</span>%</p>
+                    </article>
+                    <article class="next-forecast1 next">
+                        <h3 class="forecast-day3 "><span class="forecast-day1">Thu 24</span></h3>
+                        <p class="forecast-temp3 next-forecastz"><span class="temp1">+25</span>&deg;C</p>
+                        <p class="forecast-humidity3 hum"><span class="humidity1">24</span>%</p>
+                        <img src="weather/sun.png" alt="sun" class="forecast-icon3 icon">
+                        <p class="forecast-cloudy3 CC next-forecastz"><span class="cloudy1">0</span>%</p>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weatherjss.js"></script>
+</body>
+</html>
